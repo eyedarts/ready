@@ -3,18 +3,48 @@ html {
 }
 
 header {
+  text-align: center;
+}
+
+header h1 {
   background-image: url("../images/pattern.jpeg");
 }
 
 header h1 {
   font-size: 100px;
   color: khaki;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
-h2 {
+header nav a {
+  display: inline-block;
+  background-color: forestgreen;
+  text-decoration: none;
+  color: white;
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 5px;
+  box-shadow: 1px 1px 5px black;
+  width: 75px;
+}
+
+header nav a:hover {
+  background-color: lightgreen;
+  color: black;
+  box-shadow: 1px 1px 5px lightgreen;
+}
+
+.product h2 {
   color: white;
   font-size: 32px;
+  box-shadow: 3px 3px 6px 2px black;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.product {
+  margin: 15px;
 }
 
 #brushes h2 {
