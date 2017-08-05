@@ -5,6 +5,10 @@ html {
     color: white;
 }
 
+a {
+    color: aquamarine;
+}
+
 h1 {
     font-size: 50px;
 }
