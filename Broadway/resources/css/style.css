@@ -1,3 +1,41 @@
+html {
+    font-family: Helvetica;
+    text-align: center;
+}
+
+/* Styles for Header */
+
 header {
-    background-image: url("../images/the-flatiron-building.png")
+    background-image: url("../images/the-flatiron-building.png");
+    color: white;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+header nav {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header a {
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    color: lightgray;
+}
+
+/* Styles for multiple sections */
+
+.text-border {
+    text-shadow: 1px 1px 6px darkslategrey;
 }
