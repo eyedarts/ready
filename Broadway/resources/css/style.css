@@ -34,6 +34,16 @@ header a:hover {
     color: lightgray;
 }
 
+/* Styles for Main*/
+
+main h2 {
+    font-size: 32px;
+}
+
+main h3 {
+    font-size: 23px;
+}
+
 /* Styles for multiple sections */
 
 .text-border {
