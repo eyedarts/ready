@@ -1,6 +1,16 @@
 html {
     font-family: Helvetica;
     text-align: center;
+    background: url("../images/the-flatiron-building.png") center fixed;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
 }
 
 /* Styles for Header */
@@ -23,7 +33,6 @@ header nav {
 header a {
     display: block;
     margin-bottom: 10px;
-    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -32,10 +41,6 @@ header a:hover {
 }
 
 /* Styles for Main*/
-
-p {
-    font-size: 14px;
-}
 
 main h2 {
     font-size: 32px;
@@ -70,14 +75,31 @@ section {
     height: 75px;
 }
 
-/* Styles for multiple sections */
-
-.background {
-    background-image: url("../images/the-flatiron-building.png");
+.divider {
+    padding: 10px 0;
 }
 
-.white {
+/* Styles for Footer */
+
+footer {
+    background-color: dimgray;
+    text-align: left;
+    font-size: 11px;
+    padding: 5px;
+}
+
+footer nav {
+    float: right;
+}
+
+/* Styles for multiple sections */
+
+.white-foreground {
     color: white;
+}
+
+.white-background {
+    background-color: white;
 }
 
 .text-border {
