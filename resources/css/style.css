@@ -1,5 +1,6 @@
 html {
     font-family: Helvetica, sans-serif;
+    text-align: center;
 }
 
 .unit-container {
@@ -19,6 +20,7 @@ html {
     border: solid black 2px;
     border-radius: 5px;
     box-shadow: 0 0 5px 0 black;
+    margin: 20px;
 }
 
 .unit-box img {
@@ -35,4 +37,19 @@ html {
 .unit-box a {
     text-decoration: none;
     color: black;
+}
+
+h2 {
+    padding: 20px;
+    margin: 0;
+}
+
+section {
+    background: #b7fbb6; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#b7fbb6, #d0f3e9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#b7fbb6, #d0f3e9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#b7fbb6, #d0f3e9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #b7fbb6, #d0f3e9);
+    border: solid;
+    margin: 0 0 20px 0;
 }
