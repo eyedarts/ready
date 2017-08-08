@@ -3,6 +3,19 @@ html {
     text-align: center;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: -10px;
+    z-index: 5;
+    border-bottom: 2px groove black;
+}
+
+nav {
+    padding-bottom: 10px;
+}
+
 .unit-container {
     display: -webkit-box;
     display: -moz-box;
@@ -51,5 +64,8 @@ section {
     background: -moz-linear-gradient(#b7fbb6, #d0f3e9); /* For Firefox 3.6 to 15 */
     background: linear-gradient(135deg, #b7fbb6, #d0f3e9);
     border: solid;
-    margin: 0 0 20px 0;
+    position: relative;
+    top: 108px;
+    width: 95%;
+    margin: 0 auto 20px auto;
 }
