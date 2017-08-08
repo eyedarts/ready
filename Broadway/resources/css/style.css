@@ -5,6 +5,8 @@ html {
 
 body {
     background: url("../images/the-flatiron-building.png") center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
 }
 
