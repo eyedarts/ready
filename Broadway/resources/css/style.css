@@ -1,6 +1,9 @@
 html {
     font-family: Helvetica;
     text-align: center;
+}
+
+body {
     background: url("../images/the-flatiron-building.png") center fixed;
     background-size: cover;
 }
