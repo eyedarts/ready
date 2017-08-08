@@ -88,14 +88,17 @@ section {
 /* Styles for Footer */
 
 footer {
-    background-color: dimgray;
     text-align: left;
-    font-size: 11px;
+    font-size: 18px;
     padding: 5px;
 }
 
 footer nav {
     float: right;
+}
+
+footer nav a {
+    padding-left: 20px;
 }
 
 /* Styles for multiple sections */
