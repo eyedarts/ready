@@ -34,6 +34,7 @@ header a {
     display: block;
     margin-bottom: 10px;
     text-transform: uppercase;
+    margin-left: 20px;
 }
 
 header a:hover {
@@ -54,7 +55,7 @@ section {
     padding: 30px 0;
 }
 
-.process-container {
+.flex-container {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -64,14 +65,14 @@ section {
     justify-content: space-around;
 }
 
-.process-item {
+.flex-process-item {
     width: 300px;
     height: 200px;
     margin-bottom: 30px;
     padding: 10px;    
 }
 
-.process-item img {
+.flex-process-item img {
     height: 75px;
 }
 
@@ -94,11 +95,11 @@ footer nav {
 
 /* Styles for multiple sections */
 
-.white-foreground {
+.section-foreground {
     color: white;
 }
 
-.white-background {
+.section-background {
     background-color: white;
 }
 
