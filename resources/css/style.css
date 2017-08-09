@@ -66,6 +66,7 @@ section {
     border: solid;
     position: relative;
     top: 108px;
+    padding-top: 108px;
     width: 95%;
     margin: 0 auto 20px auto;
 }
