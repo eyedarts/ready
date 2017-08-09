@@ -65,6 +65,7 @@ section {
     background: linear-gradient(135deg, #b7fbb6, #d0f3e9);
     border: solid;
     position: relative;
+    top: 20px;
     width: 95%;
     margin: 0 auto 20px auto;
 }
