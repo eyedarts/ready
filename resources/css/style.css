@@ -8,20 +8,13 @@ header {
     width: 100%;
     background: white;
     top: -10px;
+    left: -1px;
     z-index: 5;
 }
 
 header h1 {
     margin-bottom: 5px;
 }
-
-[id^="unit"] {
-
-}
-
-/* [class^="unit"] {
-    display: none;
-} */
 
 nav {
     padding: 10px 0;
@@ -82,5 +75,13 @@ section {
 }
 
 .padding {
-    padding-top: 108px;
+    padding-top: 140px;
+}
+
+/* Media Queries*/
+
+@media only screen and (min-width: 396px) {
+    .padding {
+	padding-top: 100px;
+    }
 }
