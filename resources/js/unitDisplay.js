@@ -4,7 +4,7 @@ function unitDisplay(unitNumber) {
   unitNumber = "unit" + unitNumber;
     var unitBox = document.getElementById(unitNumber);
     
-    if (unitBox.style.display == "" || unitBox.style.display == "none") {
+  if (unitBox.style.display == "" || unitBox.style.display == "none") {
     unitBox.style.display = "flex";
     
   } else {
