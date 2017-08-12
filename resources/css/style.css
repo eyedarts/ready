@@ -16,8 +16,12 @@ header h1 {
 }
 
 [id^="unit"] {
-    display: none;
+
 }
+
+/* [class^="unit"] {
+    display: none;
+} */
 
 nav {
     padding: 10px 0;
@@ -28,7 +32,7 @@ nav {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
+    display: none;
     flex-flow: row wrap;
     justify-content: space-around;
     text-align: center;
