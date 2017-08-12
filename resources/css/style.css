@@ -9,11 +9,14 @@ header {
     background: white;
     top: -10px;
     z-index: 5;
-    border-bottom: 2px groove black;
+}
+
+[id^="unit"] {
+    display: none;
 }
 
 nav {
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 
 .unit-container {
@@ -72,14 +75,4 @@ section {
 
 .padding {
     padding-top: 108px;
-}
-
-footer {
-    position: relative;
-    top: 108px;
-    width: 100%;
-    padding: 20px 0;
-    border-top: solid black;
-    margin-top: 108px;
-    text-align: left;
 }
