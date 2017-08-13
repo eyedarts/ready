@@ -34,9 +34,8 @@ nav {
 .unit-box {
     width: 300px;
     height: 242px;
-    border: solid black 2px;
+    border: solid white 2px;
     border-radius: 5px;
-    box-shadow: 0 0 5px 0 black;
     margin: 20px;
 }
 
@@ -49,11 +48,16 @@ nav {
     background-color: lightgray;
     padding: 10px;
     margin: 0;
+    text-align: left;
 }
 
 .unit-box a {
     text-decoration: none;
     color: black;
+}
+
+.unit-box:hover {
+    border: solid black 2px;
 }
 
 h2 {
@@ -74,8 +78,33 @@ section {
     margin: 0 auto 20px auto;
 }
 
+section:hover {
+    background: #40863f; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#40863f, #91f3d7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#40863f, #91f3d7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#40863f, #91f3d7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, #40863f, #91f3d7);
+}
+
 .padding {
     padding-top: 140px;
+}
+
+.button {
+    float: right;
+    margin: 7px;
+    border: solid black 1px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background: #7f7d7d;
+    color: white;
+}
+
+.shadow {
+    box-shadow: 0 0 5px 0 black;
 }
 
 /* Media Queries*/
