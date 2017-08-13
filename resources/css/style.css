@@ -17,6 +17,7 @@ header h1 {
 }
 
 nav {
+    display: none;
     padding: 10px 0;
 }
 
@@ -87,7 +88,7 @@ section:hover {
 }
 
 .padding {
-    padding-top: 140px;
+    padding-top: 100px;
 }
 
 .button {
@@ -109,8 +110,8 @@ section:hover {
 
 /* Media Queries*/
 
-@media only screen and (min-width: 396px) {
-    .padding {
-	padding-top: 100px;
+@media only screen and (min-width: 410px) {
+    nav {
+	display: block;
     }
 }
