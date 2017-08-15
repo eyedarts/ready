@@ -1,3 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Header Styles */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -5,17 +16,19 @@ header {
     position: fixed;
     left: -1px;
     top: -2px;
+    z-index: 5;
+    background: white;
     width: 100%;
     font-family: Verdana;
     font-size: 14px;
     font-weight: bold;
     border-bottom: solid 1px black;
     padding: 15px;
-    box-sizing: border-box;
 }
 
-header p {
+header h1 {
     color: aquamarine;
+    font-size: 14px;
 }
 
 .logo {
@@ -25,7 +38,51 @@ header p {
     width: 150px;
 }
 
+nav {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
 nav a {
-    padding-left: 20px;
     color: black;
+}
+
+
+/* Main Styles */
+
+main {
+    display: flex;
+    padding-top: 85px;
+}
+
+[class^="column1"] {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    border: solid black;
+}
+
+.column1 {
+
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    border: solid black;    
+}
+
+.column3 {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    border: solid black;    
+}
+
+
+
+article {
+    border: solid black;
 }
