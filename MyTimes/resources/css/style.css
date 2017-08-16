@@ -6,13 +6,6 @@ html {
   box-sizing: inherit;
 }
 
-p {
-    font-family: Georgia;
-    font-size: 17px;
-    color: black;
-    border: solid yellow;
-}
-
 /* Flex Styles */
 
 .container {
@@ -21,6 +14,7 @@ p {
 
 .column {
     flex-direction: column;
+    padding: 0 10px;
 }
 
 .space-between {
@@ -77,52 +71,98 @@ main {
 }
 
 .column1 {
-    border: solid red;
     flex-basis: 630px;
-    flex-shring: 3;
+    flex-grow: 3;
 }
 
 .column1-sub {
-    border: solid green;
+    flex-flow: wrap;
 }
 
 .column1-left, .column1-right {
-    border: solid blue;
+    width: 47%;
+    align-items: center;
+}
+
+.column1-left p, .column1-right p {
+    height: 150px;
 }
 
 .column2 {
-    border: solid black;
     flex-basis: 300px;
 }
 
 .column3 {
-    border: solid black;
     flex-basis: 240px;
 }
 
 article {
-    border: solid black;
+    margin-top: 30px;
 }
 
 .column3 img {
-    border: solid purple;
 }
-
-.news-bites-section {
-    border: solid gold;
-}
-
 
 /* Article Styles  */
 
-.main-story {
-    background-image: URL("../images/img-story-main.png");
-    border: solid yellow;
+p {
+    font-family: Georgia;
+    font-size: 17px;
+    color: black;
+    text-align: justify;
 }
 
-.main-story h2 {
+h2 {
     font-family: Georgia;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
+    margin: 0;
+}
+
+.image {
+    background-size: cover;
+    padding: 50px;
+    margin: 0;
     color: white;
+    height: 300px;
+    width: 300px;
+}
+
+.main-story {
+    background-image: URL("../images/img-story-main.png");
+    width: 100%;
+    font-size: 40px;
+}
+
+.story1 {
+    background-image: URL("../images/img-story-1.png");
+}
+
+.story2 {
+    background-image: URL("../images/img-story-2.png");
+}
+
+.story3 {
+    background-image: URL("../images/img-story-3.png");
+}
+
+.news-bite {
+}
+
+@media only screen and (max-width: 630px) {
+
+    .column1-left, .column1-right {
+	width: auto;
+    }
+
+    article {
+	border-bottom: 1px solid gray;
+    }
+
+    .story1, .story2, .story3, .column2 {
+	margin-bottom: 20px;
+	width: 100%;
+	flex-basis: auto;
+    }
+    
 }
