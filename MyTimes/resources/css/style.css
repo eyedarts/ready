@@ -6,6 +6,13 @@ html {
   box-sizing: inherit;
 }
 
+p {
+    font-family: Georgia;
+    font-size: 17px;
+    color: black;
+    border: solid yellow;
+}
+
 /* Flex Styles */
 
 .container {
@@ -103,4 +110,19 @@ article {
 
 .news-bites-section {
     border: solid gold;
+}
+
+
+/* Article Styles  */
+
+.main-story {
+    background-image: URL("../images/img-story-main.png");
+    border: solid yellow;
+}
+
+.main-story h2 {
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
 }
