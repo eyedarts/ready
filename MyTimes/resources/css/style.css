@@ -174,9 +174,8 @@ h2 {
 	flex-basis: auto;
     }
 
-    .main-story {
+    .main-story h2 {
 	font-size: 30px;
-	padding: 15px;
     }
     
 }
