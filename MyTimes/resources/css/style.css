@@ -5,6 +5,7 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
+    font-size: 14px;
 }
 
 /* Flex Styles */
@@ -44,7 +45,6 @@ header {
     background: white;
     width: 100%;
     font-family: Verdana;
-    font-size: 14px;
     font-weight: bold;
     border-bottom: solid 1px black;
     padding: 15px;
@@ -52,7 +52,6 @@ header {
 
 header h1 {
     color: aquamarine;
-    font-size: 14px;
 }
 
 .logo {
@@ -93,6 +92,7 @@ main {
 
 .column2 {
     flex-basis: 300px;
+    flex-grow: 1;
 }
 
 .column3 {
@@ -104,6 +104,8 @@ article {
 }
 
 .column3 img {
+    width: 240px;
+    margin: 0 auto;
 }
 
 /* Article Styles  */
@@ -121,7 +123,6 @@ h2 {
 .image-article {
     background-size: cover;
     height: 300px;
-    width: 300px;
 }
 
 .image-article h2 {
@@ -153,7 +154,21 @@ h2 {
 
 /* News Bites Styles*/
 
-.news-bite {
+.news-bites p {
+    margin: 0;
+    border-bottom: black solid 1px;
+    background-color: WhiteSmoke;
+    font-family: Verdana;
+    font-size: 12px;
+    color: DimGray;
+    padding: 10px 15px;
+}
+
+.news-bites h3 {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 /* Media Styles for Mobile */
@@ -177,5 +192,13 @@ h2 {
     .main-story h2 {
 	font-size: 30px;
     }
-    
+
+    .news-bites {
+	width: 100%;
+    }
+
+    .column3 {
+        flex-grow: 1;
+    }
+
 }
