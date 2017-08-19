@@ -55,11 +55,11 @@ header h1 {
 }
 
 .logo {
-    flex-basis: 150px;
+    flex: 0 0 150px;
 }
 
 nav {
-    flex-basis: 300px;
+    flex: 0 1 300px;
 }
 
 nav a {
@@ -74,8 +74,7 @@ main {
 }
 
 .column1 {
-    flex-basis: 630px;
-    flex-grow: 3;
+    flex: 1 1 630px;
 }
 
 .column1-sub {
@@ -86,17 +85,12 @@ main {
     align-items: center;
 }
 
-.column1-left h2, .column1-right h2 {
-    height: 100px;
-}
-
 .column2 {
-    flex-basis: 300px;
-    flex-grow: 1;
+    flex: 1 1 300px;
 }
 
 .column3 {
-    flex-basis: 240px;
+    flex: 1 1 240px;
 }
 
 article {
@@ -186,7 +180,6 @@ h2 {
     .story1, .story2, .story3, .column2 {
 	margin-bottom: 20px;
 	width: 100%;
-	flex-basis: auto;
     }
 
     .main-story h2 {
@@ -197,8 +190,12 @@ h2 {
 	width: 100%;
     }
 
-    .column3 {
-        flex-grow: 1;
+}
+
+@media only screen and (max-width: 835px) {
+
+    main {
+	flex-flow: wrap;
     }
 
 }
