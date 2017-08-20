@@ -6,7 +6,7 @@
     <title>My Times</title>
   </head>
   <body>
-    <header class="container space-between align-center wrap">
+    <header class="container space-between align-center">
     
       <div class="logo container space-between align-center">
         <img src="./resources/images/img-myt-logo.jpg"
@@ -14,7 +14,7 @@
         <h1>My Times</h1>
       </div>
       
-      <nav class="container space-around">
+      <nav class="container space-around wrap">
         <a href="">World</a>
         <a href="">U.S.</a>
         <a href="">Tech</a>
@@ -54,7 +54,7 @@
 	<div class="column1-sub container space-between wrap">
 
 	  <!-- Column 1 Left Sub-Section -->
-	  <div class="column1-left container column space-around">
+	  <div class="column1-left container column space-between">
 	    <article>
 	      <h2>Orca Spends Vacation at Land World Puget</h2>
 
@@ -69,7 +69,7 @@
 	  </div>
 
 	  <!-- Column 1 Right Sub-Section -->
-	  <div class="column1-right container column">	
+	  <div class="column1-right container column space-between">	
 	    <article>
 	      <h2>Burger for Breakfast: How Early is too Early?</h2>
 	      <p>Mew York, MY—Interdum et malesuada fames ac ante ipsum
@@ -133,16 +133,19 @@
     </main>
     
     <footer class="container align-center column">
-      <h4>My Times |</h4>
-      
-      <nav class="container wrap">
-        <a href="">World</a>
-        <a href="">U.S.</a>
-        <a href="">Tech</a>
-        <a href="">Science</a>
-      </nav>
-
+      <div class="footer-head container">
+	<h4>My Times |</h4>
+	
+	<nav class="container align-center wrap space-around">
+          <a href="">World</a>
+          <a href="">U.S.</a>
+          <a href="">Tech</a>
+          <a href="">Science</a>
+	</nav>
+      </div>
+	
       <p>&copy; 2017, My Times (A Division of Codecademy bite)</p>
+      
     </footer>    
   </body>
 </html>

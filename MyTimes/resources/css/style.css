@@ -8,7 +8,7 @@ html {
     font-size: 14px;
 }
 
-/* Flex Styles */
+/* Flex */
 
 .container {
     display: flex;
@@ -35,7 +35,7 @@ html {
     flex-flow: wrap;
 }
 
-/* Header Styles */
+/* Header */
 
 header {
     position: fixed;
@@ -67,7 +67,7 @@ nav a {
 }
 
 
-/* Main Styles */
+/* Main */
 
 main {
     padding-top: 85px;
@@ -102,7 +102,7 @@ article {
     margin: 0 auto;
 }
 
-/* Article Styles  */
+/* Article  */
 
 p {
     font-size: 17px;
@@ -146,7 +146,7 @@ h2 {
     background-image: URL("../images/img-story-3.png");
 }
 
-/* News Bites Styles*/
+/* News Bites */
 
 .news-bites p {
     margin: 0;
@@ -165,7 +165,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* Footer Styles */
+/* Footer */
 
 footer {
     background-color: MediumAquamarine;
@@ -177,9 +177,15 @@ footer {
     height: 300px;
 }
 
+.footer-head {
+    width: 40%;
+}
+
 footer h4 {
     color: white;
     font-size: 16px;
+    flex: 0 0 90px;
+    margin: 0;
 }
 
 footer p {
@@ -187,14 +193,16 @@ footer p {
 }
 
 footer nav {
-    font-size: 12px;
+    flex: 1 1 auto;
 }
 
 footer nav a {
     font-size: 12px;
+    flex: 1 1 auto;
+    text-align: center;
 }
 
-/* Media Styles for Mobile */
+/* Media Queries for Mobile */
 
 @media only screen and (max-width: 630px) {
 
@@ -219,6 +227,9 @@ footer nav a {
 	width: 100%;
     }
 
+    .footer-head {
+	width: 100%;
+    }
 }
 
 @media only screen and (max-width: 835px) {
