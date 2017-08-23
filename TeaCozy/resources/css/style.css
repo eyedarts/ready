@@ -5,7 +5,7 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
-    font-size: 22px;
+    //font-size: 22px;
     color: seashell;
     background-color: black;
     opacity: 0.9;
@@ -24,7 +24,6 @@ body {
 
 .column {
     flex-direction: column;
-    padding: 0 10px;
 }
 
 .space-between {
@@ -33,6 +32,10 @@ body {
 
 .space-around {
     justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 .align-center {
@@ -66,11 +69,45 @@ header {
 }
 
 
-nav {
+header nav {
     flex: 0 1 400px;
 }
 
-nav a {
+header nav a {
+    font-size: 14px;
+}
+
+
+/* Main */
+
+main {
+    padding-top: 70px;
+}
+
+section {
     
 }
 
+.mission-section {
+    width: 1200px;
+    height: 700px;
+    margin: auto;
+    background-image: URL("../images/img-mission-background.jpg");
+    background-size: cover;
+}
+
+.mission-section h2, .mission-section h4 {
+    margin: 0;
+    height: 40px;
+    padding-top: 10px;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 385px) {
+
+    header nav a {
+	font-size: 22px;
+    }
+
+}
