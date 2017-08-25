@@ -24,7 +24,8 @@ address {
     font-style: normal;
 }
 
-/* Flex */
+
+/* Flexbox */
 
 .container {
     display: flex;
@@ -54,6 +55,7 @@ address {
     flex-flow: wrap;
 }
 
+
 /* Header */
 
 header {
@@ -64,8 +66,8 @@ header {
     width: 100%;
     font-weight: bold;
     border-bottom: solid 1px;
-    padding-left: 10px;
-    height: 69px;
+    padding: 0 10px;
+    height: 70px;
 }
 
 .logo {
@@ -76,13 +78,14 @@ header {
     height: 50px;
 }
 
-
 header nav {
     flex: 0 1 400px;
+    justify-content: flex-end;
 }
 
 header nav a {
-    font-size: 14px;
+    font-size: 22px;
+    margin-left: 15px;
 }
 
 
@@ -98,11 +101,8 @@ section {
     padding-top: 70px;
 }
 
-.section-header {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    height: 80px;
+.cover {
+    background-size: cover;
 }
 
 /* Mission */
@@ -110,9 +110,9 @@ section {
 .mission {
     height: 770px;
     background-image: URL("../images/img-mission-background.jpg");
-    background-size: cover;
     padding-top: 0;
 }
+
 
 /* Featured Tea */
 
@@ -136,12 +136,12 @@ figure {
     margin: 0;
 }
 
+
 /* Locations */
 
 .locations {
     height: 570px;
     background-image: URL("../images/img-locations-background.jpg");
-    background-size: cover;
 }
 
 .locations h2 {
@@ -166,23 +166,14 @@ figure {
 
 .contact {
     height: 200px;
-    margin-top: auto;
+    margin-top: 0;
     padding-top: 0;
 }
+
 
 /* Footer */
 
 footer p {
     text-align: left;
     padding-left: 20px;
-}
-
-/* Media Queries */
-
-@media only screen and (min-width: 385px) {
-
-    header nav a {
-	font-size: 22px;
-    }
-
 }
