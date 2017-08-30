@@ -7,18 +7,27 @@ header {
     position: fixed;
     width: 100%;
     background: white;
-    top: -10px;
-    left: -1px;
     z-index: 5;
 }
 
 header h1 {
     margin-bottom: 5px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0.6em;
+    margin-bottom: 0.35em;
 }
 
 nav {
     display: none;
     padding: 10px 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0;
 }
 
 .unit-container {
@@ -29,20 +38,19 @@ nav {
     display: none;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: flex-start;
     text-align: center;
 }
 
 .unit-box {
     width: 300px;
-    height: 245px;
-    border: solid white 2px;
-    border-radius: 5px;
     margin: 20px;
+    opacity: 1;
 }
 
 .unit-box img {
     width: 100%;
-    height: 200px;
+    height: 100%;
 }
 
 .unit-box h3 {
@@ -50,6 +58,8 @@ nav {
     padding: 10px;
     margin: 0;
     text-align: left;
+    font-weight: bold;
+    font-size: .75em;
 }
 
 .unit-box a {
@@ -58,12 +68,8 @@ nav {
 }
 
 .unit-box:hover {
-    border: solid black 2px;
-}
-
-h2 {
-    padding: 20px;
-    margin: 0;
+    opacity: 1;
+    box-shadow: 0 0 10px 4px black;
 }
 
 section {
@@ -97,6 +103,8 @@ section:hover {
     border: solid black 1px;
     padding: 3px;
     border-radius: 3px;
+    font-size: 13px;
+    box-shadow: 0 0 5px 0 black;
 }
 
 .button:hover {
@@ -104,14 +112,24 @@ section:hover {
     color: white;
 }
 
-.shadow {
-    box-shadow: 0 0 5px 0 black;
-}
-
 /* Media Queries*/
 
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: 420px) {
     nav {
 	display: block;
+    }
+
+    .unit-box {
+	opacity: .9;
+    }
+}
+
+@media only screen and (min-width: 248px) {
+    .unit-box h3 {
+	font-size: 1.20em;
+    }
+
+    .button {
+	font-size: 100%;
     }
 }
