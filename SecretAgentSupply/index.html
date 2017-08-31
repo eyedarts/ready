@@ -15,7 +15,7 @@
     <header>
 
       <!-- Logo area is flexbox container -->
-      <div class="logo">
+      <div class="logo flex-container">
 	<img src="./resources/images/logo.png"
            alt="">
 
@@ -23,21 +23,30 @@
       </div> <!-- Closing div for logo area-->
 
       <!-- Banner area is flexbox container -->
-      <div class="banner">
+      <div class="banner flex-container column">
 	<h2>New Arrival</h2>
 	<h3>Sport Bikes and Motorcycles</h3>
       </div> <!-- Closing div for banner area-->
 
-      <!-- Nav area is flexbox container -->
+      <!-- Nav area with menu and menu items -->
       <nav>
-	<a href="">Eyewear</a>
-	<a href="">Apparel</a>
-	<a href="">Gadgets</a>
-	<a href="">Vehicles</a>
-	<a href="">Classes</a>
-	<a href="">Contact</a>
-      </nav>
 
+	<!-- Menu items is flexbox container-->
+	<div class="menu-items">
+	  <a href="">Eyewear</a>
+	  <a href="">Apparel</a>
+	  <a href="">Gadgets</a>
+	  <a href="">Vehicles</a>
+	  <a href="">Classes</a>
+	  <a href="">Contact</a>
+	</div> <!-- Closing div for menu-items -->
+	
+	<!-- Menu -->
+	<div class="menu">
+	  <a href="">Menu</a>
+	</div> <!-- Closing div for menu -->
+
+      </nav>
     </header>
 
     <main>
@@ -45,17 +54,17 @@
       <!-- Product grid is flexbox container -->
       <div class="product-grid">
 
-	<figure>
+	<figure class="pen">
 	  <img src="./resources/images/pen.png" alt="">
 	  <figcaption>Exploding Pen</figcaption>
 	</figure>
 
-	<figure>
+	<figure class="watch">
 	  <img src="./resources/images/watch.png" alt="">
 	  <figcaption>Cellular Watch</figcaption>
 	</figure>
 
-	<figure>
+	<figure class="glasses">
 	  <img src="./resources/images/glasses.png" alt="">
 	  <figcaption>Thermal Glasses</figcaption>
 	</figure>
@@ -74,7 +83,7 @@
 	<!-- Hours section using <time> semantic element -->
 	<div class="hours">
 	  <h3>Hours</h3>
-	  <time datetime="08:00">0800</time> - <time datetime="18:00">1800</time>
+	  <p><time datetime="08:00">0800</time> - <time datetime="18:00">1800</time></p>
 	</div>
 
       </div> <!-- Closing div for contact area -->
