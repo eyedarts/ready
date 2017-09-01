@@ -14,22 +14,30 @@ h2, h3 {
     width: 100%;
 }
 
-h2, h3, .logo, nav a {
+h2, h3, .logo, nav a, footer {
     background-color: black;
     color: white;
 }
 
 /* Flexbox */
 
-.flex-container {
+.logo-container {
     display: flex;
     align-items: center;
 }
 
-.column {
+.banner-container {
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+}
+
+.figure-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* Logo */
@@ -108,6 +116,7 @@ figcaption {
     background-color: black;
     color: white;
     text-align: center;
+    width: 100%;
 }
 
 figure img {
@@ -123,6 +132,24 @@ figure img {
     display: none;
 }
 
+/* Contact */
+
 .contact {
-    margin-top: 3rem;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+address h3, .hours h3 {
+    padding: 1rem 0 1rem 2rem;
+}
+
+address p {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+
+footer {
+    padding: 2rem 0;
+    text-align: center;
 }
