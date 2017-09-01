@@ -14,35 +14,20 @@ h2, h3 {
     width: 100%;
 }
 
-h2, h3, .logo, nav a, footer {
+header, .banner, h2, h3, .logo, nav a, footer {
     background-color: black;
     color: white;
 }
 
-/* Flexbox */
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.banner-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
-
-.figure-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+header h1, header h2, header h3 {
+    text-transform: uppercase;
 }
 
 /* Logo */
 
 .logo {
+    display: flex;
+    align-items: center;
     height: 2.32rem;
 }
 
@@ -54,7 +39,6 @@ h2, h3, .logo, nav a, footer {
 
 .logo h1 {
     margin: 0.66rem 0;
-    text-transform: uppercase;
 }
 
 /* Banner */
@@ -63,6 +47,14 @@ h2, h3, .logo, nav a, footer {
     background-image: URL("../images/moto.jpeg");
     background-size: cover;
     height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.banner-header {
+    width: 100%;
 }
 
 .banner h2 {
@@ -109,6 +101,11 @@ main {
 figure {
     width: 90%;
     margin: 0 auto;
+    border: 4px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 figcaption {
@@ -124,10 +121,6 @@ figure img {
     height: 9rem;
 }
 
-.pen {
-    border: 4px solid black;
-}
-
 .watch, .glasses {
     display: none;
 }
@@ -136,7 +129,8 @@ figure img {
 
 .contact {
     width: 90%;
-    margin: 3rem auto;
+    padding-top: 3rem;
+    margin: 0 auto;
 }
 
 address h3, .hours h3 {
@@ -150,6 +144,95 @@ address p {
 /* Footer */
 
 footer {
+    margin-top: 3rem;
     padding: 2rem 0;
     text-align: center;
+}
+
+/* Media Queries */
+
+
+/* Tablet (Width > 470px) */
+@media only screen and (min-width: 470px) {
+
+    .banner {
+	height: 25rem;
+    }
+    
+    .banner h2 {
+	font-size: 1rem;
+	padding-top: 2rem;
+    }
+
+    .banner h3 {
+	font-size: 2rem;
+    }
+
+    .banner h2, .banner h3 {
+	padding-left: 3rem;
+	width: 23rem;
+    }
+
+    .banner {
+	justify-content: center;
+    }
+
+    .watch {
+	display: flex;
+    }
+
+    .product-grid {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    }
+
+    figure {
+	margin: 0;
+	width: 47%;
+    }
+
+    .contact {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+    }
+
+    address, .hours {
+	width: 35%;
+    }
+
+    footer {
+	text-align: left;
+    }
+}
+
+
+/* Desktop (Width > 1024px) */
+@media only screen and (min-width: 1024px) {
+    .logo, .banner-header, .menu-items, .product-grid, .contact, footer p {
+	max-width: 960px;
+	margin: 0 auto;
+    }
+
+    nav .menu {
+	display: none;
+    }
+
+    nav .menu-items {
+	display: flex;
+	justify-content: space-between;
+    }
+    
+    .glasses {
+	display: flex;
+    }
+
+    .glasses img {
+	width: 100%;
+    }
+    
+    figure {
+	width: 30%;
+    }
 }
