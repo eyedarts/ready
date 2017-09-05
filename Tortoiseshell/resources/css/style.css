@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: Helvetica;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+header {
+    background: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    padding-left: 2rem;
+    height: 1rem;
+}
+
+.logo h1 {
+    display: none;
+}
+
+.menu-items {
+    display: none;
+}
+
+nav {
+    padding: 1rem 2rem 1rem 0;
+}
+
+.mobile-menu a,
+.menu-items a {
+    color: white;
+    text-decoration: none;
+}
