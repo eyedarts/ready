@@ -90,8 +90,6 @@ nav {
 
 figcaption {
     font-size: 0.77rem;
-    //margin-bottom: 1.54rem;
-    //margin-top: 1.54rem;
 }
 
 /* Philosophy and Appointments */
@@ -100,4 +98,32 @@ section h2 {
     margin-bottom: 1rem;
     width: 100%;
     padding: 0.5rem 0;
+    font-weight: bold;
+    background-color: cadetblue;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+section p {
+    margin: 5%;
+}
+
+.philosophy {
+    margin-bottom: 4rem;
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    background: azure;
+    width: 100%;
+    padding: 4rem 0;
+    margin-top: 5rem;
+}
+
+footer img {
+    height: 1.5rem;
 }
