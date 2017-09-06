@@ -11,6 +11,8 @@ html {
     box-sizing: inherit;
 }
 
+/* Header and Nav */
+
 header {
     background: cadetblue;
     display: flex;
@@ -39,4 +41,63 @@ nav {
 .menu-items a {
     color: white;
     text-decoration: none;
+}
+
+
+/* Banner */
+
+.banner {
+    background-image: URL("../images/glasses-bg.png");
+    background-size: cover;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner-header {
+    background: white;
+    width: 100%;
+    margin-top: 9rem;
+}
+
+.banner h2 {
+    padding: 1rem 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Services */
+
+.services {
+    padding: 3.77rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.exams img {
+    margin-bottom: 1.54rem;
+}
+
+.fittings img,
+.delivery img {
+    margin: 1.54rem 0;
+}
+
+figcaption {
+    font-size: 0.77rem;
+    //margin-bottom: 1.54rem;
+    //margin-top: 1.54rem;
+}
+
+/* Philosophy and Appointments */
+
+section h2 {
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.5rem 0;
 }
