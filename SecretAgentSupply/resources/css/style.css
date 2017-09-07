@@ -156,6 +156,7 @@ footer {
 
     .banner {
 	height: 25rem;
+	justify-content: center;
     }
     
     .banner h2 {
@@ -170,10 +171,6 @@ footer {
     .banner h2, .banner h3 {
 	padding-left: 3rem;
 	width: 23rem;
-    }
-
-    .banner {
-	justify-content: center;
     }
 
     .watch {
