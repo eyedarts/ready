@@ -18,6 +18,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 }
 
 .logo img {
@@ -49,10 +52,14 @@ nav {
 .banner {
     background-image: URL("../images/glasses-bg.png");
     background-size: cover;
-    height: 14rem;
+    background-position: 20% -75px;
+    background-repeat: no-repeat;
+    height: 17rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
+    top: 3rem;
 }
 
 .banner-header {
