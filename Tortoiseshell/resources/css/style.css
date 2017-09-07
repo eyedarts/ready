@@ -78,7 +78,7 @@ nav {
 /* Services */
 
 .services {
-    padding: 3.77rem 0;
+    padding: 2.77rem 0 3.77rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,11 +88,13 @@ nav {
 
 .exams img {
     margin-bottom: 1.54rem;
+    width: 3.5rem;
 }
 
 .fittings img,
 .delivery img {
     margin: 1.54rem 0;
+    width: 5rem;
 }
 
 figcaption {
@@ -134,3 +136,4 @@ footer {
 footer img {
     height: 1.5rem;
 }
+
