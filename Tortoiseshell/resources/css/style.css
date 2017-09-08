@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box;
     font-size: 18px;
-    //line-height: 1.4;
     font-family: Helvetica;
 }
 
@@ -143,12 +142,17 @@ footer img {
     height: 1.5rem;
 }
 
+footer p {
+    display: none;
+}
+
 @media only screen and (min-width: 480px) {
 
     body {
 	background: yellow;
     }
 
+    /* Tablet - Menu */
     .mobile-menu {
 	display: none;
     }
@@ -158,6 +162,7 @@ footer img {
 	justify-content: space-between;
     }
 
+    /* Tablet - Banner */
     .banner {
 	justify-content: flex-end;
 	height: 22rem;
@@ -165,8 +170,6 @@ footer img {
 
     .banner-header {
 	margin-top: 13rem;
-	//margin: 12rem 2rem 12rem 0;
-	//width: auto;
     }
 
     .banner h2 {
@@ -174,6 +177,7 @@ footer img {
 	font-size: 1.33rem;
     }
 
+    /* Tablet - Services */
     .services {
 	flex-direction: row;
 	justify-content: space-between;
@@ -189,13 +193,42 @@ footer img {
 	height: 8rem;
 	display: flex;
 	flex-direction: column;
-	//align-content: flex-start;
     }
 
     figcaption {
 	height: 2rem;
     }
 
+    /* Tablet - Philosohpy and Appointments */
+    .info {
+	display: flex;
+	justify-content: space-around;
+    }
+
+    .info section {
+	width: 35%;
+    }
+
+    .info section p {
+	margin: auto;
+    }
+
+    /* Tablet - Footer */
+    footer {
+	margin-top: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+    }
+
+    footer img {
+	margin-left: 2rem;
+    }
+    
+    footer p {
+	display: inline-block;
+	margin-left: 1rem;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -207,11 +240,63 @@ footer img {
 	margin: 7rem 2rem 7rem 0;
 	width: auto;
     }
-    
+
+    footer img {
+	//margin-left: 4rem;
+    }
+
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
     body {
 	background: blue;
+    }
+
+    header {
+	position: relative;
+	top: 1rem;
+	width: 960px;
+	margin: 0 auto;
+    }
+    .banner {
+	height: 30rem;
+	position: absolute;
+	width: 100%;
+	top: 0px;
+    }
+
+    .banner h2 {
+	padding: 1.5rem 5rem;
+	font-size: 2rem;
+	line-height: 1.2;
+    }
+
+    main {
+	position: relative;
+	padding-top: 25rem;
+    }
+    
+    .info {
+	width: 960px;
+	margin: 0 auto;
+    }
+
+    footer {
+	width: 960px;
+	margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    body {
+	background: green;
+    }
+
+    .banner {
+	background-position: 20%;
+    }
+
+    main {
+	margin-top: 3rem;
     }
 }
