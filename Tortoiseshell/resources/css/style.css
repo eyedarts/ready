@@ -148,10 +148,6 @@ footer p {
 
 @media only screen and (min-width: 480px) {
 
-    body {
-	background: yellow;
-    }
-
     /* Tablet - Menu */
     .mobile-menu {
 	display: none;
@@ -232,9 +228,6 @@ footer p {
 }
 
 @media only screen and (min-width: 800px) {
-    body {
-	background: red;
-    }
 
     .banner-header {
 	margin: 7rem 2rem 7rem 0;
@@ -248,9 +241,6 @@ footer p {
 }
 
 @media only screen and (min-width: 980px) {
-    body {
-	background: blue;
-    }
 
     header {
 	position: relative;
@@ -265,6 +255,10 @@ footer p {
 	top: 0px;
     }
 
+    .banner-header {
+	margin-top: 15rem;
+    }
+    
     .banner h2 {
 	padding: 1.5rem 5rem;
 	font-size: 2rem;
@@ -287,16 +281,19 @@ footer p {
     }
 }
 
+@media only screen and (min-width: 1200px) {
+
+
+}
+
 @media only screen and (min-width: 1600px) {
-    body {
-	background: green;
-    }
 
     .banner {
 	background-position: 20%;
     }
 
-    main {
-	margin-top: 3rem;
+    .banner-header {
+	//margin-right: 25%;
     }
+
 }
