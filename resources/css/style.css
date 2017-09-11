@@ -8,6 +8,8 @@ header {
     width: 100%;
     background: white;
     z-index: 5;
+    padding-bottom: 10px;
+    box-shadow: 0px 1px 13px 1px black;
 }
 
 header h1 {
@@ -16,6 +18,10 @@ header h1 {
     font-weight: bold;
     margin-top: 0.6em;
     margin-bottom: 0.35em;
+}
+
+nav h1 {
+    display: none;
 }
 
 nav {
@@ -80,7 +86,7 @@ section {
     background: linear-gradient(135deg, #b7fbb6, #d0f3e9);
     border: solid;
     position: relative;
-    top: 20px;
+    top: 40px;
     width: 95%;
     margin: 0 auto 20px auto;
 }
