@@ -80,6 +80,10 @@ nav a {
 }
 
 .banner h2 {
+    display: none;
+}
+
+.banner p {
     padding: 1rem 0;
     text-transform: uppercase;
     text-align: center;
@@ -178,7 +182,7 @@ footer p {
     }
 
     /* Tablet - Banner */
-    .banner h2 {
+    .banner p {
 	padding: 1rem 4rem;
 	font-size: 1.33rem;
     }
@@ -276,7 +280,7 @@ footer p {
 	right: 2rem;
     }
 
-    .banner h2 {
+    .banner p {
 	box-shadow: -1px 2px 2px #9E9E9E;
     }
 }
@@ -303,7 +307,7 @@ footer p {
 
 @media only screen and (min-width: 1372px) {
     
-    .banner h2 {
+    .banner p {
 	padding: 1.5rem 5rem;
 	font-size: 2rem;
 	line-height: 1.2;
