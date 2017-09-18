@@ -1,0 +1,18 @@
+* Day 1 - Planning
+  Try to plan the site. Get an idea and take notes. Visualize the boxes involved. Plan some of the CSS transitions.
+
+* Day 2 - HTML Markup
+** Day 2 Lesson
+** Start HTML markup. Don't worry about CSS.
+
+* Day 3 - CSS
+** Day 3 Lesson
+** Continue working on HTML Markup.
+** Start adding CSS to match plan.
+
+* Day 4 - Continue CSS
+** Day 4 Lesson
+** Continue working on CSS.
+
+* Day 5, 6, and 7 - Finishing Touches
+** Refactor and add HTML and CSS as needed.
