@@ -1,18 +1,80 @@
-* Day 1 - Planning
+* Day 1 (8/18) - Planning
   Try to plan the site. Get an idea and take notes. Visualize the boxes involved. Plan some of the CSS transitions.
 
-* Day 2 - HTML Markup
+*** HTML
+    font-size: 16px;
+
+
+*** Header (Fixed Position, Flexbox)
+    position: fixed;
+    z-index: 5;
+    display: flex; 
+    justify-content: space-around;
+    alignt-items: center;
+    height: 64px (4rem);
+**** H1
+**** Nav
+
+
+*** Banner (Section, Flexbox)
+**** Image
+**** Banner-Header (Flexbox)
+***** H2
+***** H3
+***** CTA Button
+
+
+*** Info (Section, Flexbox)
+
+**** Info-Feature (Flexbox, Figure)
+***** Img
+***** Figcaption
+****** "It doesn't hurt to keep practicing"
+****** Text
+
+**** Info-Items (Flexbox)
+***** Figure 1 (Flexbox, Figure)
+      H3 - Orientation dates
+***** Figure 2 (Flexbox, Figure)
+      H3 - Our campus
+***** Figure 3 (Flexbox, Figure)
+      H3 - Special guest lecture
+
+
+*** Academics (Section)
+**** H2 - Start Learning
+**** Academic Container (Flexbox)
+***** Figure 1 - Software Engineering
+***** Figure 2 - Computer Art
+***** Figure 3 - Design
+***** Figure 4 - Data
+***** Figure 5 - Business
+***** Figure 6 - Marketing 
+
+
+*** Thesis Exhibit (Section)
+**** H2 - Thesis Exhibit
+**** Thesis Container (Flexbox)
+***** Video (Figure 1)
+***** Figure 2
+***** Figure 3
+
+
+*** Footer (Flexbox)
+
+
+* Day 2 (8/19) - HTML Markup
 ** Day 2 Lesson
 ** Start HTML markup. Don't worry about CSS.
 
-* Day 3 - CSS
+* Day 3 (8/20)- CSS
 ** Day 3 Lesson
 ** Continue working on HTML Markup.
 ** Start adding CSS to match plan.
 
-* Day 4 - Continue CSS
+* Day 4 (8/21)- Continue CSS
 ** Day 4 Lesson
 ** Continue working on CSS.
 
-* Day 5, 6, and 7 - Finishing Touches
+* Day 5, 6, and 7 (8/22, 8/23, 8/24) - Finishing Touches
 ** Refactor and add HTML and CSS as needed.
