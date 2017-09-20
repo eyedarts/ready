@@ -18,9 +18,9 @@
 
 *** Banner (Section, Flexbox)
 **** Image
-**** Banner-Header (Flexbox)
-***** H2
-***** H3
+**** Banner-Header (Figure, Flexbox)
+***** h3
+***** p
 ***** CTA Button
 
 
