@@ -94,3 +94,40 @@ header {
 main {
     padding-top: 4rem;
 }
+
+/* Banner */
+
+.banner img {
+    height: 10rem;
+    max-width: 100%;
+}
+
+.banner figcaption {
+    background: lightgrey;
+    padding: 2rem 1rem;
+}
+
+.banner h3 {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.banner p {
+    padding-bottom: 1.5rem;
+}
+
+.banner-button {
+    background: grey;
+    padding: .5rem 0;
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (min-width: 450px) {
+    .banner img {
+	height: auto;
+	max-width: 60%;
+    }
+}
+
