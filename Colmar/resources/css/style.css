@@ -2,7 +2,11 @@ html {
     font-size: 16px;
 }
 
+nav {
+    padding: 0 1.5rem;
+}
 
+/* Temp */
 .border {
     border: 1px solid black;
 }
@@ -23,4 +27,70 @@ h2 {
 
 .column {
     flex-direction: column;
+}
+
+/* Header */
+
+header {
+    height: 4rem;
+    position: fixed;
+    z-index: 5;
+    background: darkred;
+    width: 100%;
+}
+
+.mobile-menu {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+@media only screen and (min-width: 680px) {
+    .mobile-menu {
+	display: none;
+    }
+
+    .logo {
+	align-items: center;
+    }
+
+    .logo a {
+	text-transform: uppercase;
+    }
+
+    .logo span {
+	color: gray;
+    }
+
+    .desktop-menu {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+    }
+
+    .desktop-menu a {
+	text-decoration: none;
+	color: white;
+    }
+
+    /* Only add padding to last three desktop menu items */
+    .desktop-menu-items a:nth-child(1n + 2) {
+	padding-left: 1rem;
+    }
+
+    h1 {
+	display: inline-block;
+    }
+}
+
+
+/* Main */
+
+main {
+    padding-top: 4rem;
 }
