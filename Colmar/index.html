@@ -13,7 +13,7 @@
 
     <header class="container">
 
-      <nav class="desktop-menu">
+      <nav class="desktop-menu inside">
 	<div class="logo container">
 	  <a href="."><img src="./resources/images/ic-logo.svg" alt="Colmar Academy"></a>
 	  <a href="."><h1>Colmar<span>Academy</span></h1></a>
@@ -34,16 +34,16 @@
       </nav>
     </header>
 
-    <main>
+    <main class="inside">
 
       <section class="banner container column">
 	<h2>Banner</h2>
-	<figure class="container column">
+	<figure class="container">
 	  <img src="./resources/images/banner.jpg" alt="Top view of three people studying on picnic table">
 	  <figcaption>
 	    <h3>Learn something new everyday</h3>
 	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	    <div class="banner-button">Start Here</div>
+	    <a class="banner-button" href="">Start Here</a>
 	  </figcaption>
 	</figure>
       </section> <!-- End Banner Section -->
@@ -163,7 +163,8 @@
 	<h2>Thesis Exhibit</h2>
 
 	<figure class="thesis-feature container column">
-	  <video src="./resources/videos/thesis.mp4" autoplay loop>
+	  <!-- add autoplay and loop when finished -->
+	  <video src="./resources/videos/thesis.mp4">
 	    <a href="./resources/videos/thesis.mp4">Thesis Video</a>
 	  </video>
 	  <figcaption>
@@ -198,7 +199,7 @@
 
     </main>
 
-    <footer class="container">
+    <footer class="container inside">
       <p>&copy; 2017 Colmar Academy. All rights reserved.</p>
       <nav>
 	<a href="">Terms</a>
