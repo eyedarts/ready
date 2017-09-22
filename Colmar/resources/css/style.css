@@ -12,6 +12,10 @@ html {
     margin: auto;
 }
 
+.show {
+    display: block;
+}
+
 /* Temp */
 .border {
     border: 1px solid black;
@@ -141,7 +145,7 @@ main {
 
 .banner h3 {
     padding-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -364,4 +368,35 @@ img.desktop {
 @media only screen and (min-width: 1500px) {
     .info {
 	margin: 2rem 0;
+    }
 }
+
+/* Start Learning - Academics */
+
+.start-learning {
+    padding: 2rem 1rem;
+    border-top: solid 1px lightgrey;
+    border-bottom: solid 1px lightgrey;
+}
+
+h2.show {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.course img,
+.course h4,
+.course p {
+    display: none;
+}
+
+.course h3 {
+    padding: 1rem 1rem 1.5rem 1rem;
+    background: lightgrey;
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
