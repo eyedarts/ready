@@ -179,13 +179,13 @@ main {
 	flex-direction: row;
     }
 
+    .banner figcaption {
+	padding: .5rem 0 0 1rem;
+    }
+
     .banner img {
 	max-height: 23.5rem;;
 	width: 60%;
-    }
-
-    .banner figcaption {
-	padding-left: 1.5rem;
     }
 
     .banner-button {
@@ -249,12 +249,16 @@ img.desktop {
 }
 
 .info-items figcaption {
-    margin-bottom: 1rem;
     padding: 0 1rem;
 }
 
 .info-item {
     flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
 }
 
 @media only screen and (min-width: 250px) {
@@ -279,7 +283,7 @@ img.desktop {
     .info-feature {
 	display: block;
 	padding-right: 1.5rem;
-	max-width: 60%;
+	max-width: 45%;
     }
 
     .info-feature img {
@@ -292,41 +296,38 @@ img.desktop {
 	padding: 2rem 0 1.5rem 0;
     }
 
-    .info-feature p {
-	font-size: 1rem;
-    }
-
+    .info-feature p,
     .info-feature footer {
-	padding-top: 2rem;
-	font-size: .75rem;
+	display: none;
     }
 
     .info-items {
 	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-between;
     }
 
     .info-items figure img {
-	height: 150px;
+	height: 100px;
     }
 
     .info-items figcaption {
-	padding: 0;
+	padding: .5rem;
     }
     
     .info-items h3 {
 	margin-top: 0;
     }
 
-    .info-items .info-item:nth-child(3n+0) {
+    .info-items .info-item:last-child {
 	background: lightgrey;
     }
 
-    .info-item:first-child {
-	padding: 0 1rem 1rem 1rem;
-    }
-
-    .info-item:nth-child(1n + 2) {
-	padding: 1rem;
+    .info-item {
+	max-width: 44%;
+	padding: 0 .5rem 0 .5rem;
+	margin-bottom: 0;
     }
     
     .info-item img {
@@ -334,6 +335,25 @@ img.desktop {
 	height: 12rem;;
     }
 
+    .info-item p {
+	display: none;
+    }
+    
+    .info-item:last-child {
+	flex-direction: row;
+	align-items: center;
+	max-width: 100%;
+	padding: .5rem;
+    }
+
+    .info-item:last-child figcaption {
+	padding-left: 1rem;
+	margin: 0;
+    }
+
+    .info-item:last-child img {
+	max-width: 45%;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -345,24 +365,67 @@ img.desktop {
     img.desktop {
 	display: block;
     }
+    
+    .info-feature {
+	max-width: 60%;
+    }
 
-    .info-items figure img {
-	height: auto;
+    .info-feature p {
+	display: block;
+	font-size: 1rem;
+    }
+
+    .info-feature footer {
+	display: block;
+	padding: 2rem 0 0 0;
+	font-size: .75rem;
+    }
+
+    .info-items {
+	flex-direction: column;
+	flex-wrap: nowrap;
+    }
+
+    .info-items figcaption {
+	padding: 0;
+	margin: 0;
     }
     
+    .info-items figure img {
+	height: auto;
+	max-width: 35%;
+    }
+
     .info-item {
 	flex-direction: row;
 	align-items: center;
+	max-width: 100%;
+    }
+
+    .info-item:first-child {
+	padding: 0 1rem 1rem 1rem;
+    }
+
+    .info-item:nth-child(1n + 2) {
+	padding: 1rem;
     }
 
     .info-item img {
-	max-width: 35%;
+	max-width: 100%;
 	height: auto;
     }
 
+    .info-item:last-child img {
+	max-width: 35%;
+    }
+    
     .info-item figcaption {
 	padding-left: 1rem;
     }
+
+    .info-item p {
+	display: block;
+    }    
 }
 
 @media only screen and (min-width: 1500px) {
@@ -377,6 +440,10 @@ img.desktop {
     padding: 2rem 1rem;
     border-top: solid 1px lightgrey;
     border-bottom: solid 1px lightgrey;
+}
+
+.courses {
+    flex-direction: column;
 }
 
 h2.show {
@@ -398,6 +465,69 @@ h2.show {
     margin-top: .5rem;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+@media only screen and (min-width: 580px) {
+
+    .start-learning {
+	background: lightgrey;
+    }
+    
+    .courses {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+    }    
+
+    .course {
+	width: 27%;
+	background: white;
+	margin: .5rem;
+    }
+
+    .course img {
+	display: block;
+	width: 100%;
+    }
+
+    .course figcaption {
+	padding: .5rem;
+    }
+    
+    .course h3 {
+	font-size: .75rem;
+	background: white;
+	padding: 0 0 .5rem 0;
+    }
+
+}
+
+@media only screen and (min-width: 807px) {
+    .course h3 {
+	font-size: 1.15rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .course {
+	margin: 1rem;
+    }
+
+    .course h3 {
+	font-size: 1.15rem;
+    }
+    
+    .course h4 {
+	display: block;
+	text-transform: uppercase;
+	padding-bottom: .5rem;
+	font-size: .75rem;
+    }
+
+    .course p {
+	display: block;
+	font-size: .75rem;
+    }
 }
 
 /* Thesis Exhibits */
