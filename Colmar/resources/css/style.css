@@ -400,3 +400,32 @@ h2.show {
     font-weight: bold;
 }
 
+/* Thesis Exhibits */
+
+.thesis h2 {
+    padding: 1rem 0 1rem 0;
+}
+
+.thesis-feature video {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.thesis-feature figcaption {
+    display: none;
+}
+
+.thesis-items {
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    padding: 1rem;
+    font-size: smaller;
+}
+
+footer nav {
+    display: none;
+}
