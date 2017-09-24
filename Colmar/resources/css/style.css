@@ -30,10 +30,6 @@ main {
     display: flex;
 }
 
-.row {
-    flex-direction: row;
-}
-
 .column {
     flex-direction: column;
 }
@@ -45,7 +41,6 @@ header {
     position: fixed;
     z-index: 5;
     width: 100%;
-    box-shadow: 0px 2px 5px black;
 }
 
 .mobile-menu {
@@ -53,26 +48,27 @@ header {
     align-items: center;
     width: 100%;
     background: darkred;
+    box-shadow: 0px 2px 5px black;
 }
 
 .desktop-menu {
     display: none;
 }
 
-nav {
+header nav {
     padding: 0 1.5rem;
 }
 
-nav img {
+header nav img {
     -webkit-filter: invert(1) drop-shadow(2px 2px 2px black);
     filter: invert(1) drop-shadow(2px 2px 2px black);
 }
 
-nav a {
+header nav a {
     transition: text-shadow 150ms linear;
 }
 
-nav a:hover {
+header nav a:hover {
     text-shadow: 0px 0px 5px rgba(256, 256, 256, .5);
 }
 
@@ -199,6 +195,10 @@ h2.show {
 
 /* Thesis Exhibits */
 
+.thesis {
+    flex-direction: column;
+}
+
 .thesis h2 {
     padding: 1rem 0 1rem 0;
 }
@@ -221,6 +221,7 @@ h2.show {
 footer {
     padding: 1rem;
     font-size: smaller;
+    justify-content: center;
 }
 
 footer nav {
@@ -245,11 +246,16 @@ footer nav {
     .info-items figure img {
 	height: auto;
     }
+
+    footer {
+	justify-content: inherit;
+    }
 }
 
 @media only screen and (min-width: 640px) {
 
     /* Header */
+
     .mobile-menu {
 	display: none;
     }
@@ -273,6 +279,7 @@ footer nav {
 	width: 100%;
 	align-items: center;
 	margin: 0 auto;
+	box-shadow: 0px 2px 5px black;
     }
 
     .desktop-menu a {
@@ -286,7 +293,8 @@ footer nav {
 	padding-left: 1rem;
     }
 
-    /* Banner Section */
+    /* Banner */
+
     .banner {
 	padding: 2rem 1.5rem;
     }
@@ -313,7 +321,8 @@ footer nav {
 	color: darkred;
     }
 
-    /* Info Section */
+    /* Info */
+
     .info {
 	margin: 2rem 1.5rem;
 	flex-direction: row;
@@ -395,6 +404,7 @@ footer nav {
     }
 
     /* Start Learning - Courses */
+
     .start-learning {
 	background: lightgrey;
     }
@@ -426,6 +436,45 @@ footer nav {
 	padding: 0 0 .5rem 0;
     }
 
+    /* Thesis Exhibits */
+
+    .thesis {
+	margin: 0 2rem 2rem 2rem;
+    }
+    
+    .thesis-feature figcaption {
+	display: block;
+    }
+
+    .thesis h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-bottom: .5rem;
+    }
+
+    .thesis p {
+	color: grey;
+    }
+
+    /* Footer */ 
+
+    footer {
+	justify-content: space-between;
+	padding: 2rem;
+	font-size: smaller;
+	border-top: solid lightgrey 1px;
+    }
+
+    footer nav {
+	display: flex;
+	justify-content: space-between;
+	width: 6.25rem;
+    }
+
+    footer nav a {
+	text-decoration: none;
+	color: darkred;
+    }
 }
 
 @media only screen and (min-width: 807px) {
@@ -437,6 +486,7 @@ footer nav {
 @media only screen and (min-width: 900px) {
 
     /* Info Section */
+
     img.mobile {
 	display: none;
     }
@@ -508,6 +558,7 @@ footer nav {
 
 
     /* Start Learning - Courses */
+
     .course {
 	margin: 1rem;
     }
@@ -521,30 +572,77 @@ footer nav {
 	text-transform: uppercase;
 	padding-bottom: .5rem;
 	font-size: .75rem;
+	color: grey;
     }
 
     .course p {
 	display: block;
 	font-size: .75rem;
+	color: grey;
+    }
+
+    /* Thesis Exhibits */
+
+    .thesis {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    }
+
+    .thesis h2 {
+	width: 100%;
+    }
+
+    .thesis figcaption {
+	padding-right: 2rem;
+    }
+    
+    .thesis-feature {
+	width: 60%;
+	margin-right: 2rem;
+    }
+
+    .thesis-items {
+	display: flex;
+	width: 36%;
+    }
+
+    .thesis-items img {
+	padding: 1rem;
+	width: 40%;
+    }
+
+    .thesis-items p {
+	display: none;
+    }
+    
+    .thesis-item:first-child {
+	background: lightgrey;
+    }
+
+    .thesis-item {
+	align-items: center;
     }
 }
 
 @media only screen and (min-width: 1024px) {
 
-    /* Nav */
-    nav {
+    /* Header Nav */
+
+    header nav {
 	padding: 0;
     }
 
-    nav a:last-child {
+    header nav a:last-child {
 	padding-right: 1.5rem;
     }
 
-    nav a:first-child {
+    header nav a:first-child {
 	padding-left: 1.5rem;
     }
 
     /* Banner */
+
     .banner figure {
 	justify-content: space-around;
     }
@@ -556,10 +654,21 @@ footer nav {
     .banner img {
 	max-width: 550px;
     }
+
+    /* Thesis Exhibits */
+
+    .thesis-items p {
+	display: block;
+    }
 }
 
 @media only screen and (min-width: 1500px) {
-    .info {
+    .info,
+    .thesis {
 	margin: 2rem 0;
+    }
+
+    footer {
+	padding: 2rem 0;
     }
 }
