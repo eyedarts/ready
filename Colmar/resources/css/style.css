@@ -16,6 +16,7 @@ html {
     display: block;
 }
 
+h1,
 h2 {
     display: none;
 }
@@ -24,36 +25,28 @@ main {
     padding-top: 4rem;
 }
 
-p {
-    color: rgba(128, 128, 128, 1);
-}
-
 /* Colors */
+
+p {
+    color: rgba(44, 26, 0, 1);
+}
 
 .header-background {
     background: rgba(0, 50, 98, 1);
 }
 
-a,
-.primary-color {
+a {
     color: rgba(0, 50, 98, 1);
 }
+
+//a,
+//.primary-color {
+//    color: rgba(0, 50, 98, 1);
+//}
 
 .highlight-color {
     background: rgba(196, 130, 14, 1);
 }
-
-.color-primary-1 { color: rgba(  0, 73,143,1) }
-.color-primary-2 { color: rgba(  0, 61,121,1) }
-.color-primary-3 { color: rgba(  0, 38, 74,1) }
-.color-primary-4 { color: rgba(  0, 23, 46,1) }
-
-.color-complement-0 { color: rgba(151, 89,  0,1) }	/* Main Complement color */
-.color-complement-1 { color: rgba(221,131,  0,1) }
-.color-complement-2 { color: rgba(186,110,  0,1) }
-.color-complement-3 { color: rgba(114, 68,  0,1) }
-.color-complement-4 { color: rgba( 70, 42,  0,1) }
-
 
 /* Flexbox Styles */
 
@@ -74,14 +67,14 @@ header {
     width: 100%;
 }
 
-.mobile-menu {
+.menu {
     justify-content: space-between;
     align-items: center;
     width: 100%;
     box-shadow: 0px 2px 5px black;
 }
 
-.desktop-menu {
+.expanded-menu {
     display: none;
 }
 
@@ -94,16 +87,16 @@ header nav img {
     filter: invert(1) drop-shadow(2px 2px 2px black);
 }
 
-.desktop-menu-items a {
-    transition: color .2s ease-in-out;
+.expanded-menu-items a {
+    transition: color 200ms ease-in-out;
 }
 
-.desktop-menu-items a:hover {
+.expanded-menu-items a:hover {
     color: rgba(253, 181, 21, 1);
 }
 
 .logo a {
-    transition: text-shadow .2s ease-in-out;
+    transition: text-shadow 200ms ease-in-out;
 }
 
 .logo a:hover {
@@ -111,10 +104,6 @@ header nav img {
 }
 
 /* Banner */
-
-.banner {
-    //background: lightgrey;
-}
 
 .banner img {
     height: 13.5rem;
@@ -142,12 +131,13 @@ header nav img {
 
 .banner-button {
     display: block;
-    background: rgba(86, 86, 86, 1);
+    background: rgba(0, 50, 98, 1);
     padding: .5rem 0;
     text-align: center;
     color: white;
     font-weight: bold;
     text-decoration: none;
+    box-shadow: 0px 1px 5px 0px black;
 }
 
 /* Info Section */
@@ -181,7 +171,6 @@ img.desktop {
 
 .info-items a {
     font-size: .75rem;
-    //color: darkred;
     text-decoration: none;
 }
 
@@ -227,9 +216,12 @@ h2.show {
 .course h3 {
     padding: 1rem 1rem 1.5rem 1rem;
     background: rgba(196, 130, 14, 1);
-    margin-top: .5rem;
+    margin: .5rem auto 0 auto;
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
+    max-width: 25rem;
+    box-shadow: 0px 1px 5px 0px black;
 }
 
 /* Thesis Exhibits */
@@ -295,7 +287,7 @@ footer nav {
 
     /* Header */
 
-    .mobile-menu {
+    .menu {
 	display: none;
     }
 
@@ -311,7 +303,7 @@ footer nav {
 	color: rgba(253, 181, 21, 1);
     }
 
-    .desktop-menu {
+    .expanded-menu {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -320,14 +312,14 @@ footer nav {
 	box-shadow: 0px 2px 5px black;
     }
 
-    .desktop-menu a {
+    .expanded-menu a {
 	text-decoration: none;
 	color: white;
 	text-shadow: 0px 0px 5px black;
     }
 
     /* Only add padding to last three desktop menu items */
-    .desktop-menu-items a:nth-child(1n + 2) {
+    .expanded-menu-items a:nth-child(1n + 2) {
 	padding-left: 1rem;
     }
 
@@ -351,6 +343,8 @@ footer nav {
     }
 
     .banner-button {
+	max-width: 25rem;
+	margin: 0 auto;
 	transition: background 250ms linear, color 250ms linear;
     }
 
@@ -473,6 +467,7 @@ footer nav {
 	font-size: .75rem;
 	background: white;
 	padding: 0 0 .5rem 0;
+	box-shadow: none;
     }
 
     /* Thesis Exhibits */
@@ -492,7 +487,7 @@ footer nav {
     }
 
     .thesis p {
-	color: grey;
+	//color: grey;
     }
 
     /* Footer */ 
@@ -545,10 +540,13 @@ footer nav {
     .info-feature footer {
 	display: block;
 	padding: 2rem 0 0 0;
-	font-size: .75rem;
 	border: 0;
     }
 
+    .info-feature footer p {
+	font-size: .75rem;
+    }
+    
     .info-items {
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -600,10 +598,17 @@ footer nav {
 
     .course {
 	margin: 1rem;
+	transition: box-shadow 200ms ease-in-out, opacity 200ms ease-in-out;
     }
 
+    .course:hover {
+	box-shadow: 0px 1px 5px 0px black;
+	opacity: .75;
+    }
+    
     .course h3 {
 	font-size: 1.15rem;
+	text-align: left;
     }
     
     .course h4 {
@@ -611,13 +616,11 @@ footer nav {
 	text-transform: uppercase;
 	padding-bottom: .5rem;
 	font-size: .75rem;
-	color: grey;
     }
 
     .course p {
 	display: block;
 	font-size: .75rem;
-	color: grey;
     }
 
     /* Thesis Exhibits */
