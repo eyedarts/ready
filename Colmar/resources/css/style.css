@@ -24,6 +24,37 @@ main {
     padding-top: 4rem;
 }
 
+p {
+    color: rgba(128, 128, 128, 1);
+}
+
+/* Colors */
+
+.header-background {
+    background: rgba(0, 50, 98, 1);
+}
+
+a,
+.primary-color {
+    color: rgba(0, 50, 98, 1);
+}
+
+.highlight-color {
+    background: rgba(196, 130, 14, 1);
+}
+
+.color-primary-1 { color: rgba(  0, 73,143,1) }
+.color-primary-2 { color: rgba(  0, 61,121,1) }
+.color-primary-3 { color: rgba(  0, 38, 74,1) }
+.color-primary-4 { color: rgba(  0, 23, 46,1) }
+
+.color-complement-0 { color: rgba(151, 89,  0,1) }	/* Main Complement color */
+.color-complement-1 { color: rgba(221,131,  0,1) }
+.color-complement-2 { color: rgba(186,110,  0,1) }
+.color-complement-3 { color: rgba(114, 68,  0,1) }
+.color-complement-4 { color: rgba( 70, 42,  0,1) }
+
+
 /* Flexbox Styles */
 
 .container {
@@ -47,7 +78,6 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: darkred;
     box-shadow: 0px 2px 5px black;
 }
 
@@ -64,18 +94,26 @@ header nav img {
     filter: invert(1) drop-shadow(2px 2px 2px black);
 }
 
-header nav a {
-    transition: text-shadow 150ms linear;
+.desktop-menu-items a {
+    transition: color .2s ease-in-out;
 }
 
-header nav a:hover {
+.desktop-menu-items a:hover {
+    color: rgba(253, 181, 21, 1);
+}
+
+.logo a {
+    transition: text-shadow .2s ease-in-out;
+}
+
+.logo a:hover {
     text-shadow: 0px 0px 5px rgba(256, 256, 256, .5);
 }
 
 /* Banner */
 
 .banner {
-    background: lightgrey;
+    //background: lightgrey;
 }
 
 .banner img {
@@ -143,7 +181,7 @@ img.desktop {
 
 .info-items a {
     font-size: .75rem;
-    color: darkred;
+    //color: darkred;
     text-decoration: none;
 }
 
@@ -164,8 +202,9 @@ img.desktop {
 
 .start-learning {
     padding: 2rem 1rem;
-    border-top: solid 1px lightgrey;
-    border-bottom: solid 1px lightgrey;
+    border-top: solid 1px rgba(196, 130, 14, 1);
+    border-bottom: solid 1px rgba(196, 130, 14, 1);
+    background: white;
 }
 
 .courses {
@@ -187,7 +226,7 @@ h2.show {
 
 .course h3 {
     padding: 1rem 1rem 1.5rem 1rem;
-    background: lightgrey;
+    background: rgba(196, 130, 14, 1);
     margin-top: .5rem;
     font-size: 1.5rem;
     font-weight: bold;
@@ -269,12 +308,11 @@ footer nav {
     }
 
     .logo span {
-	color: gray;
+	color: rgba(253, 181, 21, 1);
     }
 
     .desktop-menu {
 	display: flex;
-	background: darkred;
 	justify-content: space-between;
 	width: 100%;
 	align-items: center;
@@ -369,7 +407,7 @@ footer nav {
     }
 
     .info-items .info-item:last-child {
-	background: lightgrey;
+	background: rgba(196, 130, 14, 1);
     }
 
     .info-item {
@@ -406,7 +444,8 @@ footer nav {
     /* Start Learning - Courses */
 
     .start-learning {
-	background: lightgrey;
+	background: rgba(196, 130, 14, 1);
+	border: 0;
     }
 
     .courses {
@@ -473,7 +512,6 @@ footer nav {
 
     footer nav a {
 	text-decoration: none;
-	color: darkred;
     }
 }
 
@@ -508,6 +546,7 @@ footer nav {
 	display: block;
 	padding: 2rem 0 0 0;
 	font-size: .75rem;
+	border: 0;
     }
 
     .info-items {
@@ -616,9 +655,9 @@ footer nav {
 	display: none;
     }
     
-    .thesis-item:first-child {
-	background: lightgrey;
-    }
+//    .thesis-item:first-child {
+//	background: lightgrey;
+//    }
 
     .thesis-item {
 	align-items: center;
