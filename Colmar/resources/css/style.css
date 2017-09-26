@@ -421,28 +421,6 @@ footer nav {
 	flex-direction: row;
     }
 
-    .info-feature {
-	display: block;
-	padding-right: 1.5rem;
-	max-width: 45%;
-    }
-
-    .info-feature img {
-	max-width: 100%;
-	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
-    }
-
-    .info-feature h3 {
-	font-size: 2rem;
-	font-weight: bold;
-	padding: 2rem 0 1.5rem 0;
-    }
-
-    .info-feature p,
-    .info-feature footer {
-	display: none;
-    }
-
     .info-items {
 	justify-content: space-between;
 	flex-direction: row;
@@ -451,7 +429,7 @@ footer nav {
     }
 
     .info-items figure img {
-	height: 100px;
+	height: 200px;
     }
 
     .info-items figcaption {
@@ -462,13 +440,8 @@ footer nav {
 	margin-top: 0;
     }
 
-    .info-items .info-item:last-child {
-	background-color: rgba(241, 143, 0, 1);
-	background-image: linear-gradient(19deg, rgba(241, 143, 0, 1) 0%, rgba(196, 130, 14, 1) 100%);
-    }
-
     .info-item {
-	max-width: 43%;
+	width: 47%;
 	padding: 0 .5rem 0 .5rem;
 	margin-bottom: 0;
     }
@@ -478,24 +451,20 @@ footer nav {
 	height: 12rem;;
     }
 
-    .info-item p {
-	display: none;
-    }
-    
     .info-item:last-child {
-	flex-direction: row;
-	align-items: center;
-	max-width: 100%;
+	flex-grow: 1;
 	padding: .5rem;
-    }
-
-    .info-item:last-child figcaption {
-	padding-left: 1rem;
-	margin: 0;
+	background-color: rgba(241, 143, 0, 1);
+	background-image: linear-gradient(19deg, rgba(241, 143, 0, 1) 0%, rgba(196, 130, 14, 1) 100%);
     }
 
     .info-item:last-child img {
-	max-width: 45%;
+	height: auto;
+    }
+    
+    .info-item:last-child figcaption {
+	padding-left: 1rem;
+	margin: 0;
     }
 
     /* Start Learning - Courses */
@@ -513,7 +482,7 @@ footer nav {
     }
 
     .course {
-	width: 27%;
+	width: 47%;
 	background: rgba(255, 255, 255, 1);
 	margin: .5rem;
 	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
@@ -534,6 +503,11 @@ footer nav {
 	box-shadow: none;
     }
 
+    .course p {
+	display: block;
+	text-align: center;
+    }
+    
     /* Thesis Exhibits */
 
     .thesis {
@@ -607,13 +581,22 @@ footer nav {
     img.desktop {
 	display: block;
     }
-    
+
     .info-feature {
+	display: block;
+	padding-right: 1.5rem;
 	max-width: 60%;
     }
 
-    .info-feature p {
-	display: block;
+    .info-feature img {
+	max-width: 100%;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
+    }
+
+    .info-feature h3 {
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 2rem 0 1.5rem 0;
     }
 
     .info-feature footer {
@@ -654,7 +637,7 @@ footer nav {
     .info-item {
 	flex-direction: row;
 	align-items: center;
-	max-width: 100%;
+	width: 94%;
     }
 
     .info-item:first-child {
@@ -670,6 +653,10 @@ footer nav {
 	height: auto;
     }
 
+    .info-item:last-child {
+	flex-grow: 0;
+    }
+    
     .info-item:last-child img {
 	max-width: 35%;
     }
@@ -678,13 +665,10 @@ footer nav {
 	padding-left: 1rem;
     }
 
-    .info-item p {
-	display: block;
-    }
-
     /* Start Learning - Courses */
 
     .course {
+	width: 27%;
 	margin: 1rem;
 	transition: box-shadow 200ms ease-in-out;
     }
@@ -705,7 +689,8 @@ footer nav {
     }
 
     .course p {
-	display: block;
+	//display: block;
+	text-align: left;
     }
 
     /* Thesis Exhibits */
