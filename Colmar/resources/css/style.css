@@ -1,10 +1,54 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Gentium Basic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gentium Basic'), local('GentiumBasic'), url(https://fonts.gstatic.com/s/gentiumbasic/v8/KCktj43blvLkhOTolFn-MWYKogTrBb-Yb2DFwx30qLM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Gentium Basic';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Gentium Basic Bold'), local('GentiumBasic-Bold'), url(https://fonts.gstatic.com/s/gentiumbasic/v8/2qL6yulgGf0wwgOp-UqGyKD_k3lO0YJEjlKxWOdVRBo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v14/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v14/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v14/EInbV5DfGHOiMmvb1Xr-hugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* General Styles */
+
 *, *:before, *:after {
     line-height: 1.25;
 }
 
 html {
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .inside {
@@ -21,34 +65,47 @@ h2 {
     display: none;
 }
 
+h2.show {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+}
+
 main {
     padding-top: 4rem;
 }
 
-/* Colors */
-
 p {
     color: rgba(44, 26, 0, 1);
+    font-family: "Gentium Basic", serif;
 }
 
-.header-background {
-    background: rgba(0, 50, 98, 1);
+.primary-background {
+    background-color: rgba(0, 50, 98, 1);
+    background-image: linear-gradient(19deg, rgba(0, 50, 98, 1) 0%, rgba(0, 15, 29, 1) 100%);
 }
 
 a {
     color: rgba(0, 50, 98, 1);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
 }
 
-//a,
-//.primary-color {
-//    color: rgba(0, 50, 98, 1);
-//}
+a:hover {
+    color: rgba(253, 181, 21, 1);
+}
 
 .highlight-color {
-    background: rgba(196, 130, 14, 1);
+    background-color: rgba(241, 143, 0, 1);
+    background-image: linear-gradient(19deg, rgba(241, 143, 0, 1) 0%, rgba(196, 130, 14, 1) 100%);
 }
-
-/* Flexbox Styles */
 
 .container {
     display: flex;
@@ -71,7 +128,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    box-shadow: 0px 2px 5px black;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
 }
 
 .expanded-menu {
@@ -83,8 +140,8 @@ header nav {
 }
 
 header nav img {
-    -webkit-filter: invert(1) drop-shadow(2px 2px 2px black);
-    filter: invert(1) drop-shadow(2px 2px 2px black);
+    -webkit-filter: invert(1) drop-shadow(2px 2px 2px rgba(0, 0, 0, 1));
+    filter: invert(1) drop-shadow(2px 2px 2px rgba(0, 0, 0, 1));
 }
 
 .expanded-menu-items a {
@@ -121,23 +178,30 @@ header nav img {
 .banner h3 {
     padding-bottom: 2rem;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .banner p {
     font-weight: bold;
     padding-bottom: 1.5rem;
+    text-align: center;
 }
 
 .banner-button {
     display: block;
-    background: rgba(0, 50, 98, 1);
     padding: .5rem 0;
     text-align: center;
-    color: white;
+    max-width: 25rem;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 1);
     font-weight: bold;
     text-decoration: none;
-    box-shadow: 0px 1px 5px 0px black;
+    text-transform: uppercase;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 50, 98, 1);
+    background-image: linear-gradient(19deg, rgba(0, 50, 98, 1) 0%, rgba(0, 15, 29, 1) 100%);
 }
 
 /* Info Section */
@@ -170,8 +234,10 @@ img.desktop {
 }
 
 .info-items a {
+    color: rgba(0, 80, 157, 1);
     font-size: .75rem;
     text-decoration: none;
+    text-shadow: none;
 }
 
 .info-items figcaption {
@@ -180,7 +246,7 @@ img.desktop {
 
 .info-item {
     flex-direction: column;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .info-item:last-child {
@@ -193,18 +259,11 @@ img.desktop {
     padding: 2rem 1rem;
     border-top: solid 1px rgba(196, 130, 14, 1);
     border-bottom: solid 1px rgba(196, 130, 14, 1);
-    background: white;
+    background: rgba(255, 255, 255, 1);
 }
 
 .courses {
     flex-direction: column;
-}
-
-h2.show {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 1rem;
 }
 
 .course img,
@@ -215,13 +274,15 @@ h2.show {
 
 .course h3 {
     padding: 1rem 1rem 1.5rem 1rem;
-    background: rgba(196, 130, 14, 1);
+    background-color: rgba(241, 143, 0, 1);
+    background-image: linear-gradient(19deg, rgba(241, 143, 0, 1) 0%, rgba(196, 130, 14, 1) 100%);
     margin: .5rem auto 0 auto;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
     max-width: 25rem;
-    box-shadow: 0px 1px 5px 0px black;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
 }
 
 /* Thesis Exhibits */
@@ -251,8 +312,13 @@ h2.show {
 
 footer {
     padding: 1rem;
-    font-size: smaller;
     justify-content: center;
+}
+
+footer p {
+    font-size: smaller;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
 }
 
 footer nav {
@@ -270,6 +336,7 @@ footer nav {
 
     .info-items figure img {
 	height: 150px;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
     }
 }
 
@@ -283,7 +350,7 @@ footer nav {
     }
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 680px) {
 
     /* Header */
 
@@ -309,13 +376,13 @@ footer nav {
 	width: 100%;
 	align-items: center;
 	margin: 0 auto;
-	box-shadow: 0px 2px 5px black;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
     }
 
     .expanded-menu a {
 	text-decoration: none;
-	color: white;
-	text-shadow: 0px 0px 5px black;
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
     }
 
     /* Only add padding to last three desktop menu items */
@@ -329,28 +396,28 @@ footer nav {
 	padding: 2rem 1.5rem;
     }
 
+    .banner h3,
+    .banner p {
+	text-align: left;
+    }
+    
     .banner figure {
 	flex-direction: row;
     }
 
     .banner figcaption {
 	padding: .5rem 0 0 1rem;
+	align-self: center;
     }
 
     .banner img {
 	max-height: 23.5rem;;
 	width: 60%;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
     }
 
     .banner-button {
 	max-width: 25rem;
-	margin: 0 auto;
-	transition: background 250ms linear, color 250ms linear;
-    }
-
-    .banner-button:hover {
-	background: grey;
-	color: darkred;
     }
 
     /* Info */
@@ -368,6 +435,7 @@ footer nav {
 
     .info-feature img {
 	max-width: 100%;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
     }
 
     .info-feature h3 {
@@ -401,7 +469,8 @@ footer nav {
     }
 
     .info-items .info-item:last-child {
-	background: rgba(196, 130, 14, 1);
+	background-color: rgba(241, 143, 0, 1);
+	background-image: linear-gradient(19deg, rgba(241, 143, 0, 1) 0%, rgba(196, 130, 14, 1) 100%);
     }
 
     .info-item {
@@ -438,7 +507,8 @@ footer nav {
     /* Start Learning - Courses */
 
     .start-learning {
-	background: rgba(196, 130, 14, 1);
+	background-color: rgba(241, 143, 0, 1);
+	background-image: linear-gradient(19deg, rgba(241, 143, 0, 1) 0%, rgba(196, 130, 14, 1) 100%);
 	border: 0;
     }
 
@@ -450,8 +520,9 @@ footer nav {
 
     .course {
 	width: 27%;
-	background: white;
+	background: rgba(255, 255, 255, 1);
 	margin: .5rem;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
     }
 
     .course img {
@@ -465,7 +536,7 @@ footer nav {
 
     .course h3 {
 	font-size: .75rem;
-	background: white;
+	background: rgba(255, 255, 255, 1);
 	padding: 0 0 .5rem 0;
 	box-shadow: none;
     }
@@ -480,14 +551,14 @@ footer nav {
 	display: block;
     }
 
+    .thesis-feature video {
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
+    }
+    
     .thesis h3 {
 	font-size: 1.5rem;
 	font-weight: bold;
 	padding-bottom: .5rem;
-    }
-
-    .thesis p {
-	//color: grey;
     }
 
     /* Footer */ 
@@ -495,31 +566,48 @@ footer nav {
     footer {
 	justify-content: space-between;
 	padding: 2rem;
-	font-size: smaller;
-	border-top: solid lightgrey 1px;
     }
 
     footer nav {
 	display: flex;
 	justify-content: space-between;
-	width: 6.25rem;
     }
 
     footer nav a {
 	text-decoration: none;
+	color: rgba(255, 255, 255, 1);
+	font-size: smaller;
     }
-}
 
-@media only screen and (min-width: 807px) {
-    .course h3 {
-	font-size: 1.15rem;
+    footer nav a:last-child {
+	padding-left: 1.5rem;
     }
 }
 
 @media only screen and (min-width: 900px) {
 
-    /* Info Section */
+    /* Banner */
 
+    .banner figcaption {
+	width: 40%;
+    }
+    
+    .banner-button {
+	outline: .03125rem solid;
+	outline-color: rgba(218, 136, 7, 1);
+	transition: all 250ms linear;
+	margin: 0;
+    }
+
+    .banner-button:hover {
+	box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 1);
+	letter-spacing: .5rem;
+	outline: .0625rem solid;
+	outline-color: rgba(218, 136, 7, 1);
+    }
+    
+    /* Info */
+    
     img.mobile {
 	display: none;
     }
@@ -545,11 +633,22 @@ footer nav {
 
     .info-feature footer p {
 	font-size: .75rem;
+	color: rgba(44, 26, 0, 1);
+	text-shadow: none;
     }
     
     .info-items {
 	flex-direction: column;
 	flex-wrap: nowrap;
+    }
+
+    .info-items a {
+	transition: all 250ms ease-in-out;
+    }
+
+    .info-items a:hover {
+	color: rgba(0, 0, 0, 1);
+	letter-spacing: .05rem;
     }
 
     .info-items figcaption {
@@ -593,17 +692,15 @@ footer nav {
 	display: block;
     }
 
-
     /* Start Learning - Courses */
 
     .course {
 	margin: 1rem;
-	transition: box-shadow 200ms ease-in-out, opacity 200ms ease-in-out;
+	transition: box-shadow 200ms ease-in-out;
     }
 
     .course:hover {
-	box-shadow: 0px 1px 5px 0px black;
-	opacity: .75;
+	box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 1);
     }
     
     .course h3 {
@@ -650,18 +747,15 @@ footer nav {
     }
 
     .thesis-items img {
-	padding: 1rem;
+	margin: 1rem;
 	width: 40%;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
     }
 
     .thesis-items p {
 	display: none;
     }
     
-//    .thesis-item:first-child {
-//	background: lightgrey;
-//    }
-
     .thesis-item {
 	align-items: center;
     }
@@ -712,5 +806,13 @@ footer nav {
 
     footer {
 	padding: 2rem 0;
+    }
+
+    footer p {
+	padding-left: 1.5rem;
+    }
+
+    footer nav {
+	padding-right: 1.5rem;
     }
 }
